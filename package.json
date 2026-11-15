@@ -1,0 +1,27 @@
+{
+  "name": "pi-claude-reosurces",
+  "version": "0.1.0",
+  "description": "Load global and project Claude rules, instructions, and skills in Pi.",
+  "type": "module",
+  "private": true,
+  "keywords": ["pi-package", "pi-extension", "claude", "skills"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gwynbleid85/pi-claude-reosurces.git"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.5.2"
+  },
+  "pi": {
+    "extensions": ["./extensions/claude-resources/index.ts"]
+  }
+}
